@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023 Kara
+﻿// SPDX-FileCopyrightText: 2023 Kara
 // SPDX-FileCopyrightText: 2023 metalgearsloth
 // SPDX-FileCopyrightText: 2024 slarticodefast
 // SPDX-FileCopyrightText: 2025 Androidonator
