@@ -22,6 +22,7 @@
   name: job-name-borg
   description: job-description-borg
   playTimeTracker: JobBorg
+  startingGear: BorgGear
   setPreference: true
   requirements:
     - !type:OverallPlaytimeRequirement
@@ -31,3 +32,15 @@
   supervisors: job-supervisors-hire # Frontier
   jobEntity: PlayerBorgBattery
   applyTraits: false
+
+
+- type: startingGear
+  id: BorgGear
+  equipment:
+    id: ContractorPDA
+
+- type: chameleonOutfit
+  id: BorgChameleonOutfit
+  job: Borg
+  equipment:
+    id: ContractorPDA
