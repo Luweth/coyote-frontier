@@ -109,7 +109,6 @@
   - type: LockingWhitelist
     blacklist:
       components:
-      - BorgChassis
       - RoboticsConsole
   - type: WiresPanel
     openingTool: Prying
