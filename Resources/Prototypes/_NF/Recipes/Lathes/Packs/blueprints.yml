@@ -520,6 +520,9 @@
   - CSAmmunitionBoxPistol40Overpressure
   - CSMagazinePistol40Empty
   - CSMagazineSubMachineGun40Empty
+  # Monolith
+  - ArmorPlateMedium
+  - ArmorPlateTactical
 
 # region Engineering & Science
 - type: latheRecipePack
