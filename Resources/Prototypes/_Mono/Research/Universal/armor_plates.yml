@@ -11,31 +11,31 @@
   # cost: 5000
   # - UniversalMaterialResearchT1
   # position: 10, 0
-  
+
 - type: technology
   id: UniversalArmorPlatesT1
   name: research-technology-universal-armorplates-1
   entityIcon: ArmorPlateMedium
-  discipline: FactionUniversal
+  discipline: NFArsenalMercenary # Coyote: FactionUniversal < NFArsenalMercenary
   tier: 1
   cost: 10000
   recipeUnlocks:
   - ArmorPlateMedium
   technologyPrerequisites:
-  - UniversalMaterialResearchT1
-  position: 11, 3
-  
+  - NFNonlethalAmmunition # Coyote: UniversalMaterialResearchT1 < NFNonlethalAmmunition
+  position: 3, 45
+
 - type: technology
   id: UniversalArmorPlatesT2
   name: research-technology-universal-armorplates-2
   entityIcon: ArmorPlateTactical
-  discipline: FactionUniversal
+  discipline: NFArsenalMercenary # Coyote: FactionUniversal < NFArsenalMercenary
   tier: 2
-  cost: 15000
+  cost: 20000
   recipeUnlocks:
   - ArmorPlateTactical
   - ArmorPlateRefractive
   technologyPrerequisites:
   - UniversalArmorPlatesT1
-  - UniversalMaterialResearchT2
-  position: 11, 4
+  - NFHardsuitsArmored # Coyote: UniversalMaterialResearchT2 < NFHardsuitsArmored
+  position: 5, 45
