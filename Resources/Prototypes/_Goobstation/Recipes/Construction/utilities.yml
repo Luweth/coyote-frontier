@@ -10,7 +10,7 @@
     sprite: _Goobstation/Structures/Piping/inlinegasfilter.rsi
     state: gasFilter
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
 
 - type: construction
   id: HeatExchangerInline
