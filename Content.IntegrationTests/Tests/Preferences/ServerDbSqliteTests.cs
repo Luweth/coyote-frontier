@@ -6,6 +6,7 @@ using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Preferences.Loadouts.Effects;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Robust.Shared.Analyzers;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.IoC;
@@ -220,6 +221,16 @@ namespace Content.IntegrationTests.Tests.Preferences
                 throw new NotImplementedException();
             }
 
+            public bool Resolve([ForbidLiteral] EntProtoId id, [NotNullWhen(true)] out EntityPrototype prototype)
+            {
+                throw new NotImplementedException();
+            }
+
+            public bool Resolve([ForbidLiteral] EntProtoId? id, [NotNullWhen(true)] out EntityPrototype prototype)
+            {
+                throw new NotImplementedException();
+            }
+
             public void ResolveResults()
             {
                 throw new NotImplementedException();
@@ -261,6 +272,16 @@ namespace Content.IntegrationTests.Tests.Preferences
             }
 
             public bool TryIndex(EntProtoId? id, [NotNullWhen(true)] out EntityPrototype prototype, bool logError = true)
+            {
+                throw new NotImplementedException();
+            }
+
+            public bool TryIndex([ForbidLiteral] EntProtoId id, [NotNullWhen(true)] out EntityPrototype prototype)
+            {
+                throw new NotImplementedException();
+            }
+
+            public bool TryIndex([ForbidLiteral] EntProtoId? id, [NotNullWhen(true)] out EntityPrototype prototype)
             {
                 throw new NotImplementedException();
             }
@@ -340,6 +361,16 @@ namespace Content.IntegrationTests.Tests.Preferences
                 throw new NotImplementedException();
             }
 
+            bool IPrototypeManager.Resolve<T>(ProtoId<T> id, out T prototype) where T : class
+            {
+                throw new NotImplementedException();
+            }
+
+            bool IPrototypeManager.Resolve<T>(ProtoId<T>? id, out T prototype) where T : class
+            {
+                throw new NotImplementedException();
+            }
+
             bool IPrototypeManager.TryGetKindFrom<T>(out string kind)
             {
                 throw new NotImplementedException();
@@ -361,6 +392,16 @@ namespace Content.IntegrationTests.Tests.Preferences
             }
 
             bool IPrototypeManager.TryIndex<T>(ProtoId<T>? id, out T prototype, bool logError) where T : class
+            {
+                throw new NotImplementedException();
+            }
+
+            bool IPrototypeManager.TryIndex<T>(ProtoId<T> id, out T prototype) where T : class
+            {
+                throw new NotImplementedException();
+            }
+
+            bool IPrototypeManager.TryIndex<T>(ProtoId<T>? id, out T prototype) where T : class
             {
                 throw new NotImplementedException();
             }
