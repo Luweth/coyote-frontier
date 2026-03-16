@@ -60,8 +60,6 @@
 #region Hitscan
 - type: hitscan
   id: BloodCultLaserMaster
-  parent: BloodCultLaser
-  categories: [ HideSpawnMenu ]
   damage:
     types:
       Slash: 25
@@ -78,8 +76,6 @@
 
 - type: hitscan
   id: WizardHitscanLightningMaster
-  parent: WizardHitscanLightning
-  categories: [ HideSpawnMenu ]
   damage:
     types:
       Shock: 25
@@ -95,8 +91,6 @@
 
 - type: hitscan
   id: CausticBeamMaster
-  parent: CausticBeam
-  categories: [ HideSpawnMenu ]
   damage:
     types:
       Caustic: 20
