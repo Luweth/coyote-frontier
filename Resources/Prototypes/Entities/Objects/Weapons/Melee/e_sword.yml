@@ -122,11 +122,11 @@
             Slash: 15 # buffed most melee's damage by ~1.5x
             Heat: 15 # buffed most melee's damage by ~1.5x
     deactivatedSecret: true
-  - type: ItemToggleActiveSound
-    activeSound:
-      path: /Audio/Weapons/ebladehum.ogg
-      params:
-        volume: -3
+  # - type: ItemToggleActiveSound # Coyote: Ow my ears.
+  #   activeSound:
+  #     path: /Audio/Weapons/ebladehum.ogg
+  #     params:
+  #       volume: -3
   - type: ComponentToggler
     components:
     - type: Sharp
@@ -176,11 +176,11 @@
       path: /Audio/Weapons/ebladeoff.ogg
       params:
         volume: -6
-  - type: ItemToggleActiveSound
-    activeSound:
-      path: /Audio/Weapons/ebladehum.ogg
-      params:
-        volume: -6
+  # - type: ItemToggleActiveSound # Coyote: Ow my ears.
+  #   activeSound:
+  #     path: /Audio/Weapons/ebladehum.ogg
+  #     params:
+  #       volume: -6
   - type: ItemToggleMeleeWeapon
     activatedSoundOnSwing:
       path: /Audio/Weapons/eblademiss.ogg
@@ -303,11 +303,11 @@
             Slash: 18 # buffed most melee's damage by ~1.5x
             Heat: 18 # buffed most melee's damage by ~1.5x
             Structural: 15 # buffed most melee's damage by ~1.5x
-  - type: ItemToggleActiveSound
-    activeSound:
-      path: /Audio/Weapons/ebladehum.ogg
-      params:
-        volume: 3
+  # - type: ItemToggleActiveSound # Coyote: Ow my ears
+  #   activeSound:
+  #     path: /Audio/Weapons/ebladehum.ogg
+  #     params:
+  #       volume: 3
   - type: ComponentToggler
     components:
     - type: Sharp
