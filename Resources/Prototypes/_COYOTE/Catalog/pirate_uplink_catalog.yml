@@ -93,24 +93,24 @@
     whitelist:
     - Smuggler
 
-- type: listing #Coyote
-  id: UplinkContraCrate
-  name:  uplink-contracrate
-  description: uplink-contracrate-desc
-  productEntity: SpawnUplinkContrabandCrate
-  icon: { sprite: Structures/Storage/Crates/generic.rsi, state: icon }
-  cost:
-    Doubloon: 3
-  categories:
-  - UplinkPirateUtility
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
-  - !type:BuyerJobCondition
-    whitelist:
-    - Smuggler
+#- type: listing #Coyote
+#  id: UplinkContraCrate
+#  name:  uplink-contracrate
+#  description: uplink-contracrate-desc
+#  productEntity: SpawnUplinkContrabandCrate
+#  icon: { sprite: Structures/Storage/Crates/generic.rsi, state: icon }
+#  cost:
+#    Doubloon: 3
+#  categories:
+#  - UplinkPirateUtility
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - PirateUplink
+#  - !type:BuyerJobCondition
+#    whitelist:
+#    - Smuggler
 
 - type: listing #Coyote
   id: UplinkPirateRCD
@@ -845,6 +845,24 @@
     - Smuggler
 
 - type: listing
+  id: UplinkFreelancerJawsOfLife
+  name: uplink-syndicate-jaws-of-life-name
+  description: uplink-syndicate-jaws-of-life-desc
+  productEntity: SyndicateJawsOfLife
+  cost:
+    Doubloon: 8
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+  - !type:BuyerJobCondition
+    whitelist:
+    - Escort
+
+- type: listing
   id: UplinkFreelancerVoiceMask
   name: uplink-voice-mask-name
   description: uplink-voice-mask-desc
@@ -899,7 +917,7 @@
   icon: { sprite: /Textures/Clothing/Uniforms/Jumpsuit/rainbow.rsi, state: icon }
   productEntity: ClothingBackpackChameleonFill
   cost:
-    Doubloon: 8
+    Doubloon: 20
   categories:
   - UplinkPirateDeception
   conditions:
@@ -1564,7 +1582,44 @@
     - NFPirate
 
 - type: listing
-  id:  UplinkPirateAmmunitionBoxRifle60Rubber #A fun toy for escorts to play with
+  id: UplinkFreelancerThrowingKnivesKit
+  name: uplink-knives-kit-name
+  description: uplink-knives-kit-desc
+  icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: throwing_knives }
+  productEntity: ThrowingKnivesKit
+  cost:
+    Doubloon: 16
+  categories:
+  - UplinkPirateWeapons
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+  - !type:BuyerJobCondition
+    whitelist:
+    - Escort
+
+- type: listing
+  id: UplinkFreelancerPistolCobra
+  name: uplink-pistol-cobra-name
+  description: uplink-pistol-cobra45-desc
+  productEntity: NFWeaponPistolCobra
+  cost:
+    Doubloon: 16
+  categories:
+  - UplinkPirateWeapons
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+  - !type:BuyerJobCondition
+    whitelist:
+    - Escort
+
+- type: listing
+  id:  UplinkPirateAmmunitionBoxRifle60Rubber
   name:  uplink-pirate-60ammo-rubber-name
   description: uplink-pirate-60ammo-rubber-desc
   productEntity:  NFAmmunitionBoxRifle60Rubber

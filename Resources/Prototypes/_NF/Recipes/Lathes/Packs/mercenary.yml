@@ -112,6 +112,8 @@
   - ClothingEyesHudBountyHunter
   - BolaNF
   - NFHandcuffs
+  - ArmorPlateLight # Mono
+  - ArmorPlateSteel # Mono
 
 - type: latheRecipePack
   id: NFMercenaryArchetypeMeleeStatic

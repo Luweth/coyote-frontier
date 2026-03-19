@@ -150,7 +150,7 @@
   id: TableDungeonLootWeaponsMeleeUnique
   table: !type:GroupSelector
     children:
-    - id: ClothingHandsKnuckleBoneCrushers
+    #- id: ClothingHandsKnuckleBoneCrushers # Coyote: This is an admeme weapon, it should not be spawnable.
     - id: ArmBlade
     - id: Kanabou
 
@@ -256,6 +256,7 @@
       - id: WeaponCaseLongVulcanExpedition
       - id: WeaponCaseLongBulldog
       - id: WeaponCaseLongEnforcerExpedition
+      - id: WeaponCaseLongEstocExpedition
       - id: WeaponCaseShortAntiqueLaserExpedition
       - id: WeaponCaseShortAdvancedLaserExpedition
       - id: WeaponCaseLongLaserCarbineExpedition
@@ -279,6 +280,7 @@
       - id: WeaponCaseLongEnergyGunExpedition
       - id: WeaponCaseLongLaserCannonExpedition
       - id: WeaponCaseHeavyAsmgtExpeditions
+      - id: WeaponCaseLongPrototypePulseRifleExpedition # Coyote: Re-add to loot tables
       - id: WeaponCaseLongHristovExpedition #Coyote extra trash drop.
 
 # region explosives
@@ -395,10 +397,11 @@
       children:
       - id: WeaponCaseShortAmmoBoxLethal20
       - id: WeaponCaseShortAmmoBoxBigLethal20
-    - !type:GroupSelector
-      children:
-      - id: WeaponCaseShortAmmoBoxLethal25
-      - id: WeaponCaseShortAmmoBoxBigLethal25
+    # Coyote: Remove .25 from tables
+    #- !type:GroupSelector
+    #  children:
+    #  - id: WeaponCaseShortAmmoBoxLethal25
+    #  - id: WeaponCaseShortAmmoBoxBigLethal25
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal30
@@ -406,6 +409,11 @@
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal35
+    # Coyote Start: .40 ammo
+    - !type:GroupSelector
+      children:
+      - id: WeaponCaseShortAmmoBoxLethal40
+    # Coyote End
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethalShotgun
@@ -418,16 +426,18 @@
     children:
     - id: WeaponCaseShortAmmoBoxRubber30
     - id: WeaponCaseShortAmmoBoxRubber35
+    - id: WeaponCaseShortAmmoBoxRubber40 # Coyote
     - id: WeaponCaseShortAmmoBoxRubber45
     - id: WeaponCaseShortAmmoBoxRubberShotgun
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxRubber20
       - id: WeaponCaseShortAmmoBoxBigRubber20
-    - !type:GroupSelector
-      children:
-      - id: WeaponCaseShortAmmoBoxRubber25
-      - id: WeaponCaseShortAmmoBoxBigRubber25
+    # Coyote: Remove .25 from tables
+    #- !type:GroupSelector
+    #  children:
+    #  - id: WeaponCaseShortAmmoBoxRubber25
+    #  - id: WeaponCaseShortAmmoBoxBigRubber25
 
 # region ammo incendiary
 - type: entityTable
@@ -438,6 +448,7 @@
     - id: WeaponCaseShortAmmoBoxIncendiary30
     - id: WeaponCaseShortAmmoBoxIncendiary35
     - id: WeaponCaseShortAmmoBoxIncendiaryShotgun
+    - id: WeaponCaseShortAmmoBoxIncendiary40 # Coyote
     - id: WeaponCaseShortAmmoBoxIncendiary45
 
 # region ammo uranium
@@ -449,6 +460,7 @@
     - id: WeaponCaseShortAmmoBoxUranium30
     - id: WeaponCaseShortAmmoBoxUranium35
     - id: WeaponCaseShortAmmoBoxUraniumShotgun
+    - id: WeaponCaseShortAmmoBoxUranium40 # Coyote
     - id: WeaponCaseShortAmmoBoxUranium45
 
 # region ammo practice
@@ -459,8 +471,9 @@
     - id: WeaponCaseShortAmmoBoxPractice20
     - id: WeaponCaseShortAmmoBoxPractice30
     - id: WeaponCaseShortAmmoBoxPractice35
-    - id: WeaponCaseShortAmmoBoxPractice25
+    #- id: WeaponCaseShortAmmoBoxPractice25 # Coyote: Remove .25 from tables
     - id: WeaponCaseShortAmmoBoxPracticeShotgun
+    - id: WeaponCaseShortAmmoBoxPractice40 # Coyote
     - id: WeaponCaseShortAmmoBoxPractice45
 
 # region combined

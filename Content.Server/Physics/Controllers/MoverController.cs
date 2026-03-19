@@ -2,12 +2,16 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
+using Content.Server._WF.Shuttles.Components;
+using Content.Server._WF.Shuttles.Systems;
+using Content.Server.Chat.Managers; // Wayfarer
 using Content.Shared.Friction;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Systems;
 using Content.Shared.Ghost; // Frontier
+using Prometheus;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using DroneConsoleComponent = Content.Server.Shuttles.DroneConsoleComponent;
@@ -18,8 +22,16 @@ namespace Content.Server.Physics.Controllers;
 
 public sealed class MoverController : SharedMoverController
 {
+    private static readonly Gauge ActiveMoverGauge = Metrics.CreateGauge(
+        "physics_active_mover_count",
+        "Active amount of InputMovers being processed by MoverController");
+
     [Dependency] private readonly ThrusterSystem _thruster = default!;
     [Dependency] private readonly SharedTransformSystem _xformSystem = default!;
+    // Wayfarer: Shuttle autopilot
+    [Dependency] private readonly AutopilotSystem _autopilot = default!;
+    [Dependency] private readonly IChatManager _chatManager = default!;
+    // End Wayfarer
 
     private Dictionary<EntityUid, (ShuttleComponent, List<(EntityUid, PilotComponent, InputMoverComponent, TransformComponent)>)> _shuttlePilots = new();
 
@@ -101,6 +113,8 @@ public sealed class MoverController : SharedMoverController
             HandleMobMovement(mover, frameTime);
         }
 
+        ActiveMoverGauge.Set(_movers.Count);
+
         HandleShuttleMovement(frameTime);
     }
 
@@ -151,6 +165,21 @@ public sealed class MoverController : SharedMoverController
     {
         if (!TryComp<PilotComponent>(uid, out var pilot) || pilot.Console == null)
             return;
+
+        // Wayfarer: Disengage autopilot if player gives any navigational input
+        if (
+            state &&
+            pilot.Console != null &&
+            TryComp<TransformComponent>(pilot.Console.Value, out var consoleXform) &&
+            consoleXform.GridUid != null &&
+            TryComp<AutopilotComponent>(consoleXform.GridUid.Value, out var autopilot) &&
+            autopilot.Enabled
+        )
+        {
+            _autopilot.DisableAutopilotToDriveMode(consoleXform.GridUid.Value);
+            _autopilot.SendShuttleMessage(consoleXform.GridUid.Value, "Releasing manual control to pilot");
+        }
+        // End Wayfarer
 
         ResetSubtick(pilot);
 

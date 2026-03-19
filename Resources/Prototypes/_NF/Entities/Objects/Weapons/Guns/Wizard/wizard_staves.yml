@@ -149,7 +149,7 @@
   name: master-wizard blue curacao elemental staff
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: WaterElementalConjuredStaff
+    proto: WaterElementalConjuredStaffMaster # Coyote: WaterElementalConjuredStaff < WaterElementalConjuredStaffMaster
     fireCost: 250
   - type: Construction
     graph: WeaponChargedStaffWizardElementalAdeptActivation
@@ -206,7 +206,7 @@
   name: master-wizard ice staff
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletIceGlobe
+    proto: BulletIceGlobeMaster # Coyote: BulletIceGlobe < BulletIceGlobeMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffWizardIceAdeptActivation
@@ -253,7 +253,7 @@
   name: master-wizard lightning staff
   components:
   - type: HitscanBatteryAmmoProvider
-    proto: WizardHitscanLightning
+    proto: WizardHitscanLightningMaster # Coyote: WizardHitscanLightning < WizardHitscanLightningMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffWizardLightningAdeptActivation
@@ -349,7 +349,7 @@
   name: master-wizard magic bolt staff
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletMagicBolt
+    proto: BulletMagicBoltMaster # Coyote: BulletMagicBolt < BulletMagicBoltMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffWizardBoltMagicAdeptActivation
@@ -406,7 +406,7 @@
   name: master-wizard fire bolt staff
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletFireBolt
+    proto: BulletFireBoltMaster # Coyote: BulletFireBolt < BulletFireBoltMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffWizardBoltFireAdeptActivation
@@ -463,7 +463,7 @@
   name: master-wizard caustic beam staff
   components:
   - type: HitscanBatteryAmmoProvider
-    proto: CausticBeam
+    proto: CausticBeamMaster # Coyote: CausticBeam < CausticBeamMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffWizardCausticAdeptActivation
@@ -517,7 +517,7 @@
   name: master-wizard brick staff
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: BrickConjured
+    proto: BrickConjuredMaster # Coyote: BrickConjured < BrickConjuredMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffWizardBrickAdeptActivation
@@ -565,7 +565,7 @@
   name: master blood cult staff of crimson bolt
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletBloodCultDarkBolt
+    proto: BulletBloodCultDarkBoltMaster # Coyote: BulletBloodCultDarkBolt < BulletBloodCultDarkBoltMaster
     fireCost: 40
   - type: Construction
     graph: WeaponChargedStaffCultistBoltDarkActivation
@@ -613,7 +613,7 @@
   name: master blood cult staff of malicious touch
   components:
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletBloodCultHand
+    proto: BulletBloodCultHandMaster # Coyote: BulletBloodCultHand < BulletBloodCultHandMaster
     fireCost: 40
   - type: Construction
     graph: WeaponInertStaffCultistHandActivation
@@ -661,7 +661,7 @@
   name: master blood cult staff of crimson lightning
   components:
   - type: HitscanBatteryAmmoProvider
-    proto: BloodCultLaser
+    proto: BloodCultLaserMaster # Coyote: BloodCultLaser < BloodCultLaserMaster
     fireCost: 40
   - type: Construction
     graph: WeaponInertStaffCultistLightningActivation

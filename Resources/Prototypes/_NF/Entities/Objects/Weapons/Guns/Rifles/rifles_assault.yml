@@ -1,7 +1,7 @@
 #region WizDen
 - type: entity # TODO: switch to .25 rifle (caseless)
   id: NFWeaponRifleAssaultSm
-  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun ]
+  parent: [ NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun ]
   name: Soland-Moss # Renamed: real brand name
   description: |-
     An iconic weapon of war. An illegal firearm often used by Syndicate agents.
@@ -15,9 +15,41 @@
     steps: 4
     zeroVisible: true
 
+- type: entity
+  id: NFWeaponRifleAssaultEstoc
+  parent: [NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultCybersun]
+  name: Estoc DMR
+  description: "A designated marksman rifle firing in 3-round bursts. The Estoc was designed as the Lecter’s long-range counterpart, equipped with an extended 20-inch barrel and telescopic sight.\nFeeds from .20 rifle magazines."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
+    availableModes:
+    - Burst
+    - SemiAuto
+    selectedMode: Burst
+    shotsPerBurst: 3
+    burstFireRate: 14
+    burstCooldown: 1
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 2
+    pvsIncrease: 0.2
+
 - type: entity # TODO: switch to .25 rifle (caseless)
   id: NFWeaponRifleAssaultM90GrenadeLauncher
-  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultCybersun ]
+  parent: [ NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultCybersun ]
   name: M-90gl
   description: |-
     An older bullpup carbine model, with an attached underbarrel grenade launcher. An illegal firearm often used by Syndicate agents.
@@ -75,7 +107,7 @@
 
 - type: entity
   id: NFWeaponRifleAssaultJackdaw
-  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ]
+  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ] # Coyote: BaseC3Contraband < BaseC2Contraband
   name: Jackdaw
   description: |-
     The beginning of the end is heralded by the song of a Jackdaw.

@@ -109,6 +109,7 @@
   - MiniStationAnchorCircuitboard
   - SmallThrusterMachineCircuitboard
   - SmallGyroscopeMachineCircuitboard
+  - AutopilotServerCircuitboard # Wayfarer
   # AdvancedAtmospherics
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
@@ -151,6 +152,8 @@
   recipes:
   # MeatManipulation
   - BiomassReclaimerMachineCircuitboard
+  # SmartStorageRefrigeration
+  - SmartFridgeCircuitboard #Coyote sector
   # BiochemicalStasis
   - StasisBedMachineCircuitboard
   - CryoPodMachineCircuitboard
@@ -367,6 +370,8 @@
   # MeatManipulation
   - FatExtractorMachineCircuitboard
   - BiogeneratorMachineCircuitboard
+  # SmartStorageRefrigeration
+  - SmartFridgeCircuitboard
   # IndustrialCutter
   - CutterMachineCircuitboard
   # FauxAstroTiles
@@ -515,6 +520,10 @@
   - CSAmmunitionBoxPistol40Overpressure
   - CSMagazinePistol40Empty
   - CSMagazineSubMachineGun40Empty
+  # Monolith
+  - ArmorPlateMedium
+  - ArmorPlateTactical
+  - ArmorPlateRefractive
 
 # region Engineering & Science
 - type: latheRecipePack
@@ -539,10 +548,10 @@
   - PowerCellHigh
   - TurboItemRechargerCircuitboard
   # BluespaceStorage
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
-  - ClothingBackpackMessengerHolding
+  - ClothingBackpackHolding # Coyote: Unify into single chameleon item
+  # - ClothingBackpackSatchelHolding
+  # - ClothingBackpackDuffelHolding
+  # - ClothingBackpackMessengerHolding
   # PortableFission
   - PowerCellMicroreactor
   # HardsuitsBasic

@@ -47,7 +47,7 @@
 - type: entity
   id: BaseGrenade
   name: base grenade
-  parent: [BaseItem, BaseC3ContrabandUnredeemable] # Frontier: BaseMajorContraband<BaseC2ContrabandUnredeemable
+  parent: [BaseItem, BaseC2ContrabandUnredeemable] # Frontier: BaseMajorContraband<BaseC2ContrabandUnredeemable
   abstract: true
   components:
   - type: Tag
@@ -164,7 +164,7 @@
 - type: entity
   id: BaseCannonBall
   name: base cannon ball
-  parent: [BaseItem, BaseC3Contraband] # Frontier: BaseMajorContraband<BaseC3ContrabandNoValue
+  parent: [BaseItem, BaseC3ContrabandNoValue] # Frontier: BaseMajorContraband<BaseC3ContrabandNoValue
   abstract: true
   components:
   - type: Tag
