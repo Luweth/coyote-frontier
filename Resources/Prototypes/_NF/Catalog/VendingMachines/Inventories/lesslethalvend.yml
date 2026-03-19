@@ -8,6 +8,10 @@
   # Magazines
     NFSpeedLoaderPistol35Rubber: 5
     NFSpeedLoaderPistol45Rubber: 5
+    NFMagazinePistol35Rubber: 5 # Coyote
+    NFMagazinePistol45Rubber: 5 # Coyote
+    NFMagazineRifle20Rubber: 5 # Coyote
+    NFMagazineRifle30Rubber: 5 # Coyote
   # Ammo boxes
     NFAmmunitionBoxPistol35Rubber: 10
     NFAmmunitionBoxPistol45Rubber: 10
@@ -31,6 +35,10 @@
   # Magazines
     NFSpeedLoaderPistol35Rubber: 4294967295
     NFSpeedLoaderPistol45Rubber: 4294967295
+    NFMagazinePistol35Rubber: 4294967295 # Coyote
+    NFMagazinePistol45Rubber: 4294967295 # Coyote
+    NFMagazineRifle20Rubber: 4294967295 # Coyote
+    NFMagazineRifle30Rubber: 4294967295 # Coyote
   # Ammo boxes
     NFAmmunitionBoxPistol35Rubber: 4294967295
     NFAmmunitionBoxPistol45Rubber: 4294967295
