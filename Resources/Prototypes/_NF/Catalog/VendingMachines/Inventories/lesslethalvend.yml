@@ -11,11 +11,12 @@
     NFMagazinePistol35Rubber: 5 # Coyote
     NFMagazinePistol45Rubber: 5 # Coyote
     NFMagazineSubMachineGun35Rubber: 5 # Coyote
-    NFMagazineSubMachineGun45Rubber: 5 # Coyote
+    NFMagazineSubMachineGun40Rubber: 5 # Coyote
     NFMagazineRifle20Rubber: 5 # Coyote
     NFMagazineRifle30Rubber: 5 # Coyote
   # Ammo boxes
     NFAmmunitionBoxPistol35Rubber: 10
+    NFAmmunitionBoxPistol40Rubber: 10 # Coyote
     NFAmmunitionBoxPistol45Rubber: 10
     NFAmmunitionBoxShellShotgunBeanbag: 8
     NFAmmunitionBoxRifle20Rubber: 8
@@ -40,11 +41,12 @@
     NFMagazinePistol35Rubber: 4294967295 # Coyote
     NFMagazinePistol45Rubber: 4294967295 # Coyote
     NFMagazineSubMachineGun35Rubber: 4294967295 # Coyote
-    NFMagazineSubMachineGun45Rubber: 4294967295 # Coyote
+    NFMagazineSubMachineGun40Rubber: 4294967295 # Coyote
     NFMagazineRifle20Rubber: 4294967295 # Coyote
     NFMagazineRifle30Rubber: 4294967295 # Coyote
   # Ammo boxes
     NFAmmunitionBoxPistol35Rubber: 4294967295
+    NFAmmunitionBoxPistol40Rubber: 4294967295 # Coyote
     NFAmmunitionBoxPistol45Rubber: 4294967295
     NFAmmunitionBoxRifle20Rubber: 4294967295
     NFAmmunitionBoxRifle30Rubber: 4294967295
