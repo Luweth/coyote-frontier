@@ -15,4 +15,4 @@
           - PirateUplink
     - !type:BuyerJobCondition # Coyote
       whitelist:
-      - PirateUplink
+      - Escort
