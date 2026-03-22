@@ -48,6 +48,7 @@
   - type: SmartFridge
     whitelist:
       components:
+      - Food
       - FitsInDispenser
       - Pill
       - Produce
