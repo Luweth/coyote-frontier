@@ -37,4 +37,4 @@ uplink-pistol-magazine-c20r-40-desc = SMG magazine with 30 cartridges. Compatibl
 # utility
 
 uplink-pirate-chameleon-name = Chameleon Projector
-uplink-pirate-chameleon-desc = Disappear in plain sight by creating a hologram of an item around you. Do not use this to play the game "Object Search".
+uplink-pirate-chameleon-desc = Disappear in plain sight by creating a hologram of an item around you.
