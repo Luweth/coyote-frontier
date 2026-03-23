@@ -25,8 +25,3 @@
   id: ScentsNSFW
   name: trait-category-scents-nsfw
   maxTraitPoints: 2
-
-- type: traitCategory
-  id: Abilities
-  name: trait-category-abilities
-  maxTraitPoints: 2

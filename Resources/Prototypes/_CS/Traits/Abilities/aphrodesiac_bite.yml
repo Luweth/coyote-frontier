@@ -13,14 +13,14 @@
   - type: EntityTargetAction
     whitelist:
       components:
-      - SSDIndicator # weird hack but it works?
+      - Bloodstream
     event: !type:AphrodesiacBiteEvent
 
 - type: trait
   id: AbilityAphrodesiacBite
   name: trait-aphrodesiacbite-name
   description: trait-aphrodesiacbite-desc
-  category: Abilities
+  category: Quirks
   cost: 0
   components:
     - type: AphrodesiacBite

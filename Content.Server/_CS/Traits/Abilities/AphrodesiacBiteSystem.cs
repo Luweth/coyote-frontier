@@ -13,7 +13,6 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
-    private readonly SoundSpecifier _bite = new SoundPathSpecifier("/Audio/Effects/bite.ogg");
 
     public override void Initialize()
     {
@@ -41,8 +40,11 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
         if (!TryComp<BloodstreamComponent>(target, out var bloodstream))
             return;
 
-        var solution = new Solution("Libidozenithizine", 5);
+        if (!TryComp<AphrodesiacBiteComponent>(user, out var bite))
+            return;
+
+        var solution = new Solution(bite.Reagent, bite.Amount);
         if (_bloodstream.TryAddToChemicals(target, solution, bloodstream))
-            _audio.PlayPvs(_bite, user);
+            _audio.PlayPvs(bite.Sound, user);
     }
 }
