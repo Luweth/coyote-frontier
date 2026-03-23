@@ -1646,7 +1646,7 @@
   cost:
     Doubloon: 30
   categories:
-    - UplinkPirateUtility
+    - UplinkPirateDeception
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -1664,7 +1664,7 @@
   cost:
     Doubloon: 16
   categories:
-    - UplinkPirateUtility
+    - UplinkPirateDeception
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
