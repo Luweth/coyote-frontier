@@ -803,6 +803,8 @@
   - ContractorDrinkFlaskOld
   - ContractorDrinkShinyFlask
   - ContractorDrinkFlask
+  - ContractorDrinkMREFlask
+  - ContractorDrinkFlaskBar
   - ContractorDrinkVacuumFlask
   - ContractorFlashlightLantern
   - ContractorCardBoxBlack
