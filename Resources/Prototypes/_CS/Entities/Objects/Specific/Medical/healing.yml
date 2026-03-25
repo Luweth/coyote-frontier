@@ -70,7 +70,7 @@
   components:
   - type: Tag
     tags:
-    - Brutepack
+    - Ointment
   - type: Sprite
     sprite: _CS/Objects/Specific/Medical/robotopicals.rsi
     state: robofoam
