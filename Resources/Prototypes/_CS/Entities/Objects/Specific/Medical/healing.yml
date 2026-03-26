@@ -68,9 +68,9 @@
   parent: BaseHealingItem
   id: RepairSpray
   components:
-#  - type: Tag
-#    tags:
-#    - Brutepack
+  - type: Tag
+    tags:
+    - Ointment
   - type: Sprite
     sprite: _CS/Objects/Specific/Medical/robotopicals.rsi
     state: robofoam
